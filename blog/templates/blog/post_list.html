@@ -4,7 +4,14 @@
 	<title>Hello!!</title>
 </head>
 <body>
-<h1>Nice work</h1>
-Well done!
+	<h1>Nice work</h1>
+	<ul>
+		{% for elem in posts %}
+			<li>
+				<h3>{{elem}}</h3>
+				{{elem.text}}
+			</li>
+		{% endfor %}
+	</ul>
 </body>
 </html>
